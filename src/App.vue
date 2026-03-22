@@ -285,6 +285,34 @@
 // autiriz(""); // привет гость
 
 
+// -----------------------------------------------------------------------------------
+
+
+// Enum - уже заполненый обьект-переменные (нельязя перезаписывать)
+
+// enum ERole{
+//     admin = "Админ",
+//     redactor = "Редактор",
+//     user = "Пользователь"
+// }
+
+// type TRole  = "Админ" | "Редактор" | "Пользователь"
+// function getRole(role?: TRole): string{
+//     if(role === ERole.admin){
+//        return `Добро пожаловать ${ERole.admin}`;
+//     }
+//     else if(role == ERole.redactor){
+//         return `Добро пожаловать ${ERole.redactor}`;
+//     }
+//     else if(role === ERole.user){
+//         return `Добро пожаловать ${ERole.user}`
+//     }
+//     else{
+//         return role ?? "Добро пожаловать гость"
+//     }
+// }
+// console.log(getRole("Редактор")); // Добро пожаловать Редактор
+// console.log(getRole()); // Добро пожаловать гость
 </script>
 
 <template>
